@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+
+# Data — large files tracked by DVC, not git
+data/raw/*.csv
+data/processed/*.csv
+data/reference/*.csv
+
+# Models — tracked by MLflow
+models/*.pkl
+models/*.joblib
+
+# MLflow tracking store
+mlruns/
+
+# Monitoring reports
+monitoring/reports/*.html
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
+
+# Secrets — never commit
+*.token
+.git-credentials
+secrets.yaml
+
+# DVC cache
+.dvc/cache/
+.dvc/tmp/
